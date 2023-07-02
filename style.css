@@ -165,7 +165,7 @@ section {
 
 #about {
   padding: 50px;
-  background-color: var(--gris-oscuro);
+  background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgba(111,111,111,1) 100%);
 }
 
 #about h5 {
