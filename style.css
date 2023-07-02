@@ -79,11 +79,23 @@ section {
   padding: 20px;
   background-color: var(--blanco);
 }
-
 .menu {
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--blanco);
+  border-bottom: var(--secondary) solid 1px;
+}
+
+.menu > .container {
+  display: flex;
+  gap: 10px;
+  width: 1200px;
+  padding: 20px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: var(--secondary) solid 1px;
 }
 
 .navbar {
@@ -173,4 +185,22 @@ section {
   line-height: 1.2em;
   text-align: center;
   animation: fadeInUp 3s;
+}
+
+#espacio {
+  min-height: 100px;
+  background-color: var(--blanco);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 40px 20px;
+  background-color: var(--negro);
+}
+
+footer p {
+  color: var(--blanco);
+  font-weight: 600;
 }
