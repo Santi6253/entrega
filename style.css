@@ -7,15 +7,6 @@
   --gris-oscuro: #3e3e3e;
 }
 
-*{
-  font-family: "Montserrat", sans-serif;
-  line-height: 1em;
-  box-sizing: border-box;
-  text-decoration: none;
-  padding: 0px;
-  margin: 0px;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -33,6 +24,25 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+*{
+  font-family: "Montserrat", sans-serif;
+  line-height: 1em;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 h1 {
@@ -60,6 +70,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
 .container,
 section {
   display: flex;
@@ -68,14 +79,21 @@ section {
   padding: 20px;
   background-color: var(--blanco);
 }
+
 .menu {
   justify-content: space-between;
   align-items: center;
   border-bottom: var(--secondary) solid 1px;
 }
+
 .navbar {
   width: fit-content;
 }
+
+.logo {
+  animation: fadeInDown 3s;
+}
+
 .navbar a {
   color: var(--negro);
   padding: 8px 20px;
@@ -142,6 +160,7 @@ section {
 }
 .hero-img img{
   border-radius: 40px;
+  animation: fadeIn 1s;
 }
 
 #about {
@@ -153,4 +172,5 @@ section {
   color: var(--blanco);
   line-height: 1.2em;
   text-align: center;
+  animation: fadeInUp 3s;
 }
