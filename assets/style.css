@@ -88,6 +88,7 @@ section {
   justify-content: center;
   background-color: var(--blanco);
   border-bottom: var(--secondary) solid 1px;
+  z-index: 9;
 }
 
 .menu > .container {
@@ -101,6 +102,11 @@ section {
 
 .navbar {
   width: fit-content;
+}
+
+#menu-toggle,
+.menu-label{
+  display: none;
 }
 
 .logo {
@@ -153,7 +159,7 @@ section {
   cursor: pointer;
   color: var(--blanco);
   background-color: var(--negro);
-  animation: fadeInUp 3s;
+  animation: fadeInUp 1s;
 }
 .hero-botones a:hover {
   color: var(--negro);
@@ -193,6 +199,7 @@ section {
   align-items: center;
   gap: 40px;
   padding: 50px;
+  text-align: center;
 }
 
 .container-cards {

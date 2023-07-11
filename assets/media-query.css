@@ -1,3 +1,144 @@
 @media (max-width: 1200px) {
-    
+    .container,
+    section {
+        width: 1000px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1040px) {
+    .container,
+    section {
+        width: 900px;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    h5 {
+        font-size: 1rem;
+    }
+    .hero-info {
+        width: 60%;
+    }
+    .hero-img {
+        width: 40%;
+    }
+    .hero-img img {
+        width: 250px;
+    }
+    .contact {
+        width: 700px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container,
+    section {
+        flex-direction: column;
+        width: 600px;
+    }
+    .menu > .container {
+        gap: 20px;
+    }
+    .hero-info {
+        width: 100%;
+    }
+    .hero-img {
+        width: 100%;
+    }
+    .hero-img img {
+        width: 100%;
+    }
+    .container-cards {
+        flex-direction: column;
+    }
+    .contact {
+        width: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .container-contacto {
+        width: 100%;
+    }
+    .container-mapa {
+        width: 100%;
+    }
+}
+
+@media (max-width: 720px) {
+    .container,
+    section {
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu > .container {
+        flex-direction: row;
+    }
+    .menu-label {
+        display: flex;
+        cursor: pointer;
+    }
+    #menu-toggle:checked + .navbar-list {
+        display: flex;
+    }
+    .navbar {
+        position: absolute;
+        flex-direction: column;
+        background: var(--negro);
+        width: 100%;
+        height: calc(100vh - 103px);
+        top: 103px;
+        margin-left: -20px;
+        justify-content: center;
+        gap: 20px;
+        pad: 20px;
+        z-index: 9;
+        display: none;
+    }
+    .navbar a {
+        color: var(--blanco);
+    }
+    #menu-toggle:checked + .navbar {
+        display: flex;
+        animation: fadeIn 0.5s;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+    .container,
+    section {
+        flex-direction: column;
+        width: 100%;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    #hero {
+        padding: 20px;
+    }
+    .hero-botones {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0px;
+    }
+    #about {
+        padding: 40px 20px;
+    }
+    #cards {
+        padding: 40px 20px;
+    }
 }
