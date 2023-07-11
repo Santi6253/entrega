@@ -190,7 +190,7 @@ section {
 #about h5 {
   color: var(--blanco);
   line-height: 1.2em;
-  text-align: center;
+  text-align: justify;
   animation: fadeInUp 3s;
 }
 
